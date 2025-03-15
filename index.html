@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta del Restaurante</title>
+    <title>Nocturna - Carta</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Carta del Restaurante</h1>
-    </header>
-
+    <div class="header">
+        <h1>Nocturna</h1>
+        <div class="divider"></div>
+        <p>Alta cocina en sombras</p>
+    </div>
     <main>
         <section class="categoria">
             <h2>Entrantes</h2>
@@ -92,6 +93,31 @@
                 <p><strong>Alérgenos:</strong> Ninguno.</p>
                 <p class="precio">$20.00</p>
             </div>
+            <hr class="separador"> 
+
+
+            <h3 class="subcategoria">Carnes Blancas</h3>
+            <div class="producto">
+                <img src="imagenes/suprema.jpg" alt="Suprema de Pollo en Salsa de Mostaza y Miel" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Suprema de Pollo en Salsa de Mostaza y Miel</h3>
+                <p class="descripcion">Suprema de pollo a la plancha bañada en una suave salsa de mostaza y miel, acompañada de puré rústico de papas y espárragos salteados.</p>
+                <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos, manteca.</p>
+                <p><strong>Alérgenos:</strong> Lácteos.</p>
+                <p class="precio">$18.00</p>
+            </div>
+            <hr class="separador">
+
+            
+            <h3 class="subcategoria">Pescados</h3>
+            <div class="producto">
+                <img src="imagenes/salmon.jpg" alt="Salmón en Costra de Sésamo con Salsa Teriyaki" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Filete de salmón sellado con una costra de sésamo, servido con arroz basmati y vegetales salteados al wok en salsa teriyaki</h3>
+                <p class="descripcion">Salmón, sésamo, arroz basmati, zanahoria, morrón, cebolla, salsa teriyaki.</p>
+                <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos, manteca.</p>
+                <p><strong>Alérgenos:</strong> Pescado, sésamo, soja.</p>
+                <p class="precio">$22.00</p>
+            </div>
+
         </section>
 
         <section class="categoria">
@@ -139,7 +165,7 @@
         <section class="categoria">
             <h2>Bebidas Alcohólicas</h2>
             <div class="producto">
-                <img src="imagenes/vino-malbec.jpg" alt="Vino Malbec" class="producto-imagen" onclick="mostrarImagen(this)">
+                <img src="imagenes/vino-malbec.jpeg" alt="Vino Malbec" class="producto-imagen" onclick="mostrarImagen(this)">
                 <h3>Vino Malbec</h3>
                 <p class="descripcion">Vino tinto de uvas Malbec.</p>
                 <p><strong>Ingredientes:</strong> Uvas Malbec.</p>
@@ -196,5 +222,17 @@
                 contenedor.style.display = 'none';  // Ocultar el contenedor cuando se haga clic
             }
         </script>
+
+
+<footer class="footer">
+    <div class="footer-contenido">
+        <p>&copy; 2025 Nocturna - Alta cocina en sombras</p>
+        <p>Síguenos en: 
+            <a href="https://www.facebook.com/profile.php?id=100008191458265&locale=es_LA" class="red-social">Facebook</a> | 
+            <a href="https://www.instagram.com/facu_condez/?next=%2F" class="red-social">Instagram</a> | 
+            <a href="https://x.com/FacuConde13" class="red-social">Twitter</a>
+        </p>
+    </div>
+</footer>
 </body>
 </html>
