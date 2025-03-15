@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta del Restaurante</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Carta del Restaurante</h1>
+    </header>
+
+    <main>
+        <section class="categoria">
+            <h2>Entrantes</h2>
+            <div class="producto">
+                <img src="imagenes/bruschetta.jpg" alt="Bruschetta" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Bruschetta</h3>
+                <p class="descripcion">Pan crujiente con tomate, albahaca y ajo.</p>
+                <p><strong>Ingredientes:</strong> Pan, tomate, albahaca, ajo, aceite de oliva.</p>
+                <p><strong>Alérgenos:</strong> Gluten.</p>
+                <p class="precio">$5.00</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/empanada.jpg" alt="Empanada de Carne" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Empanada de Carne</h3>
+                <p class="descripcion">Empanada rellena de carne de res, cebolla y especias.</p>
+                <p><strong>Ingredientes:</strong> Carne de res, cebolla, masa de empanada, especias.</p>
+                <p><strong>Alérgenos:</strong> Gluten.</p>
+                <p class="precio">$3.50</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/tapas.jpg" alt="Tapas variadas" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Tapas Variadas</h3>
+                <p class="descripcion">Selección de tapas españolas acompañadas de salsas.</p>
+                <p><strong>Ingredientes:</strong> Aceitunas, jamón, queso, pan, salsa alioli.</p>
+                <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                <p class="precio">$6.00</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Ensaladas</h2>
+            <div class="producto">
+                <img src="imagenes/ensalada-cesar.jpg" alt="Ensalada César" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Ensalada César</h3>
+                <p class="descripcion">Lechuga fresca con aderezo césar y crutones.</p>
+                <p><strong>Ingredientes:</strong> Lechuga, pollo, queso parmesano, crutones, aderezo césar.</p>
+                <p><strong>Alérgenos:</strong> Lactosa, gluten.</p>
+                <p class="precio">$8.00</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/ensalada-griega.jpg" alt="Ensalada Griega" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Ensalada Griega</h3>
+                <p class="descripcion">Tomate, pepino, cebolla morada, aceitunas y queso feta.</p>
+                <p><strong>Ingredientes:</strong> Tomate, pepino, cebolla morada, aceitunas, queso feta.</p>
+                <p><strong>Alérgenos:</strong> Lactosa.</p>
+                <p class="precio">$7.50</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/ensalada-rucula.jpg" alt="Ensalada de Rúcula" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Ensalada de Rúcula</h3>
+                <p class="descripcion">Rúcula, tomate cherry y vinagreta de mostaza.</p>
+                <p><strong>Ingredientes:</strong> Rúcula, tomate cherry, mostaza, aceite de oliva.</p>
+                <p><strong>Alérgenos:</strong> Ninguno.</p>
+                <p class="precio">$6.00</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Platos Principales</h2>
+            <h3 class="subcategoria">Carnes Rojas</h3>
+            <div class="producto">
+                <img src="imagenes/solomillo.jpg" alt="Solomillo a la parrilla" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Solomillo a la parrilla</h3>
+                <p class="descripcion">Jugoso solomillo acompañado de papas rústicas.</p>
+                <p><strong>Ingredientes:</strong> Solomillo de res, papas, especias.</p>
+                <p><strong>Alérgenos:</strong> Ninguno.</p>
+                <p class="precio">$18.00</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/bife.jpg" alt="Bife de Chorizo" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Bife de Chorizo</h3>
+                <p class="descripcion">Bife de chorizo a la parrilla acompañado de vegetales.</p>
+                <p><strong>Ingredientes:</strong> Bife de chorizo, zanahoria, brócoli, papas.</p>
+                <p><strong>Alérgenos:</strong> Ninguno.</p>
+                <p class="precio">$20.00</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Pastas</h2>
+            <div class="producto">
+                <img src="imagenes/carbonara.jpg" alt="Spaghetti Carbonara" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Spaghetti Carbonara</h3>
+                <p class="descripcion">Pasta con salsa cremosa de huevo y panceta.</p>
+                <p><strong>Ingredientes:</strong> Pasta, huevo, panceta, queso parmesano.</p>
+                <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                <p class="precio">$12.00</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/lasagna.jpg" alt="Lasaña" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Lasaña</h3>
+                <p class="descripcion">Lasaña casera con carne molida y salsa bechamel.</p>
+                <p><strong>Ingredientes:</strong> Carne molida, pasta, salsa bechamel, queso.</p>
+                <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                <p class="precio">$14.00</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Postres</h2>
+            <div class="producto">
+                <img src="imagenes/tiramisu.jpg" alt="Tiramisú" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Tiramisú</h3>
+                <p class="descripcion">Delicioso postre italiano con café y cacao.</p>
+                <p><strong>Ingredientes:</strong> Mascarpone, café, bizcocho, cacao.</p>
+                <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                <p class="precio">$7.00</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/mousse.jpg" alt="Mousse de Chocolate" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Mousse de Chocolate</h3>
+                <p class="descripcion">Suave mousse de chocolate amargo con crema.</p>
+                <p><strong>Ingredientes:</strong> Chocolate, crema, azúcar.</p>
+                <p><strong>Alérgenos:</strong> Lactosa.</p>
+                <p class="precio">$6.50</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Bebidas Alcohólicas</h2>
+            <div class="producto">
+                <img src="imagenes/vino-malbec.jpg" alt="Vino Malbec" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Vino Malbec</h3>
+                <p class="descripcion">Vino tinto de uvas Malbec.</p>
+                <p><strong>Ingredientes:</strong> Uvas Malbec.</p>
+                <p><strong>Alérgenos:</strong> Sulfitos.</p>
+                <p class="precio">$6.00 (copa)</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/cerveza-artesanal.jpg" alt="Cerveza Artesanal" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Cerveza Artesanal</h3>
+                <p class="descripcion">Cerveza artesanal de estilo IPA.</p>
+                <p><strong>Ingredientes:</strong> Cebada, lúpulo, agua, levadura.</p>
+                <p><strong>Alérgenos:</strong> Gluten.</p>
+                <p class="precio">$4.00 (pinta)</p>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Bebidas sin Alcohol</h2>
+            <div class="producto">
+                <img src="imagenes/coca-cola.jpg" alt="Coca-Cola" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Coca-Cola</h3>
+                <p class="descripcion">Gaseosa sabor cola.</p>
+                <p><strong>Ingredientes:</strong> Agua carbonatada, Azúcar, Colorante caramelo, Ácido fosfórico, Aromatizantes naturales</p>
+                <p><strong>Alérgenos:</strong> fenilalanina.</p>
+                <p class="precio">$6.00 (600ml)</p>
+            </div>
+            <hr class="separador">
+            <div class="producto">
+                <img src="imagenes/agua-saborizada.jpg" alt="Cerveza Artesanal" class="producto-imagen" onclick="mostrarImagen(this)">
+                <h3>Agua Saborizada</h3>
+                <p class="descripcion">Agua saborizada linea Coca-Cola.</p>
+                <p><strong>Ingredientes:</strong> Agua y jugo concentrado de frutas.</p>
+                <p><strong>Alérgenos:</strong> Lactosa, soya o fenilalanina.</p>
+                <p class="precio">$4.00 (600ml)</p>
+            </div>
+        </section>
+    </main>
+        <!-- Contenedor para mostrar la imagen ampliada -->
+        <div id="imagen-ampliada" class="imagen-ampliada" onclick="cerrarImagen()" onclick="mostrarImagen(this)">
+            <img id="imagen-grande" src="" alt="Imagen Ampliada">
+        </div>
+    
+        <script>
+            function mostrarImagen(imagen) {
+                var contenedor = document.getElementById('imagen-ampliada');
+                var imagenGrande = document.getElementById('imagen-grande');
+                imagenGrande.src = imagen.src;  // Copiar la fuente de la imagen
+                contenedor.style.display = 'flex';  // Mostrar el contenedor
+            }
+    
+            function cerrarImagen() {
+                var contenedor = document.getElementById('imagen-ampliada');
+                contenedor.style.display = 'none';  // Ocultar el contenedor cuando se haga clic
+            }
+        </script>
+</body>
+</html>
