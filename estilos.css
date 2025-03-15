@@ -1,18 +1,37 @@
 /* Estilo global para el cuerpo */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2C3E50;
-    color: #ECF0F1;
+    background-image: url('imagenes/ciudad-noche.jpeg'); /* Ruta de la imagen */
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen */
+    background-attachment: fixed; /* Para que el fondo no se desplace al hacer scroll */
+    background-repeat: no-repeat; /* Para evitar repeticiones */
 }
 
-header {
-    background-color: #1A252F;
-    color: #ECF0F1;
+.header {
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px 20px;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d4af37;
+    transition: text-shadow 0.3s ease-in-out;
+}
+.header h1:hover {
+    text-shadow: 0 0 15px #d4af37;
+}
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #bbb;
+}
+.divider {
+    width: 80px;
+    height: 2px;
+    background: #d4af37;
+    margin: 20px auto;
 }
 
 main {
@@ -155,4 +174,25 @@ hr.separador {
     main {
         padding: 20px;
     }
+}
+
+
+.footer {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #FFD700; /* Dorado para destacar */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
