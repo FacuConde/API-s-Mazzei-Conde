@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link data-default-icon="img/brand_logo.png" rel="icon" sizes="192x192" href="img/brand_logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperium - Carta</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,239 +15,307 @@
             <img src="img/brand_logo.png" alt="Logo del Restaurant">
         </div>
         <div class="menu">
-            <section class="categoria">
-                <h2>Entrantes</h2>
-                <div class="producto">
-                    <img src="img/bruschetta.jpg" alt="Bruschetta" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Bruschetta</h3>
-                    <p class="descripcion">Pan crujiente con tomate, albahaca y ajo.</p>
-                    <p><strong>Ingredientes:</strong> Pan, tomate, albahaca, ajo, aceite de oliva.</p>
-                    <p><strong>Alérgenos:</strong> Gluten.</p>
-                    <p class="precio">$5.00</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/empanada.jpg" alt="Empanada de Carne" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Empanada de Carne</h3>
-                    <p class="descripcion">Empanada rellena de carne de res, cebolla y especias.</p>
-                    <p><strong>Ingredientes:</strong> Carne de res, cebolla, masa de empanada, especias.</p>
-                    <p><strong>Alérgenos:</strong> Gluten.</p>
-                    <p class="precio">$3.50</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/tapas.jpg" alt="Tapas variadas" class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Tapas Variadas</h3>
-                    <p class="descripcion">Selección de tapas españolas acompañadas de salsas.</p>
-                    <p><strong>Ingredientes:</strong> Aceitunas, jamón, queso, pan, salsa alioli.</p>
-                    <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
-                    <p class="precio">$6.00</p>
-                </div>
-            </section>
-
-            <section class="categoria">
-                <h2>Ensaladas</h2>
-                <div class="producto">
-                    <img src="img/ensalada-cesar.jpg" alt="Ensalada César" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Ensalada César</h3>
-                    <p class="descripcion">Lechuga fresca con aderezo césar y crutones.</p>
-                    <p><strong>Ingredientes:</strong> Lechuga, pollo, queso parmesano, crutones, aderezo césar.</p>
-                    <p><strong>Alérgenos:</strong> Lactosa, gluten.</p>
-                    <p class="precio">$8.00</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/ensalada-griega.jpg" alt="Ensalada Griega" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Ensalada Griega</h3>
-                    <p class="descripcion">Tomate, pepino, cebolla morada, aceitunas y queso feta.</p>
-                    <p><strong>Ingredientes:</strong> Tomate, pepino, cebolla morada, aceitunas, queso feta.</p>
-                    <p><strong>Alérgenos:</strong> Lactosa.</p>
-                    <p class="precio">$7.50</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/ensalada-rucula.jpg" alt="Ensalada de Rúcula" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Ensalada de Rúcula</h3>
-                    <p class="descripcion">Rúcula, tomate cherry y vinagreta de mostaza.</p>
-                    <p><strong>Ingredientes:</strong> Rúcula, tomate cherry, mostaza, aceite de oliva.</p>
-                    <p><strong>Alérgenos:</strong> Ninguno.</p>
-                    <p class="precio">$6.00</p>
+            <section class="categoria izq">
+                <div class="categoria_boton izq">
+                    <h2>Entradas</h2>
+                    <h3>Ver más</h3>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/bruschetta.jpg" alt="Bruschetta" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Bruschetta</h3>
+                        <p class="descripcion">Pan crujiente con tomate, albahaca y ajo.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Pan, tomate, albahaca, ajo, aceite de oliva.</p>
+                            <p><strong>Alérgenos:</strong> Gluten.</p>
+                        </div>
+                        <p class="precio">$35.000</p>
+                    </div>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/empanada.jpg" alt="Empanada de Carne" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Empanada de Carne</h3>
+                        <p class="descripcion">Empanada rellena de carne de res, cebolla y especias.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Carne de res, cebolla, masa de empanada, especias.</p>
+                            <p><strong>Alérgenos:</strong> Gluten.</p>
+                        </div>
+                        <p class="precio">$5.000</p>
+                    </div>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/tapas.jpg" alt="Tapas variadas" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Tapas Variadas</h3>
+                        <p class="descripcion">Selección de tapas españolas acompañadas de salsas.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Aceitunas, jamón, queso, pan, salsa alioli.</p>
+                            <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                        </div>
+                        <p class="precio">$28.000</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="categoria">
-                <h2>Platos Principales</h2>
-                <h3 class="subcategoria">Carnes Rojas</h3>
-                <div class="producto">
-                    <img src="img/solomillo.jpg" alt="Solomillo a la parrilla" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Solomillo a la parrilla</h3>
-                    <p class="descripcion">Jugoso solomillo acompañado de papas rústicas.</p>
-                    <p><strong>Ingredientes:</strong> Solomillo de res, papas, especias.</p>
-                    <p><strong>Alérgenos:</strong> Ninguno.</p>
-                    <p class="precio">$18.00</p>
+            <section class="categoria der">
+                <div class="categoria_boton der">
+                    <h2>Ensaladas</h2>
+                    <h3>Ver más</h3>
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/ensalada-cesar.jpg" alt="Ensalada César" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Ensalada César</h3>
+                        <p class="descripcion">Lechuga fresca con aderezo césar y crutones.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Lechuga, pollo, queso parmesano, crutones, aderezo césar.
+                            </p>
+                            <p><strong>Alérgenos:</strong> Lactosa, gluten.</p>
+                        </div>
+                        <p class="precio">$22.000</p>
+                    </div>
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/ensalada-griega.jpg" alt="Ensalada Griega" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Ensalada Griega</h3>
+                        <p class="descripcion">Tomate, pepino, cebolla morada, aceitunas y queso feta.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Tomate, pepino, cebolla morada, aceitunas, queso feta.</p>
+                            <p><strong>Alérgenos:</strong> Lactosa.</p>
+                        </div>
+                        <p class="precio">$17.000</p>
+                    </div>
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/ensalada-rucula.jpg" alt="Ensalada de Rúcula" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Ensalada de Rúcula</h3>
+                        <p class="descripcion">Rúcula, tomate cherry y vinagreta de mostaza.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Rúcula, tomate cherry, mostaza, aceite de oliva.</p>
+                            <p><strong>Alérgenos:</strong> Ninguno.</p>
+                        </div>
+                        <p class="precio">$18.000</p>
+                    </div>
                 </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/bife.jpg" alt="Bife de Chorizo" class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Bife de Chorizo</h3>
-                    <p class="descripcion">Bife de chorizo a la parrilla acompañado de vegetales.</p>
-                    <p><strong>Ingredientes:</strong> Bife de chorizo, zanahoria, brócoli, papas.</p>
-                    <p><strong>Alérgenos:</strong> Ninguno.</p>
-                    <p class="precio">$20.00</p>
-                </div>
-                <hr class="separador">
+            </section>
 
+            <section class="categoria izq">
+                <div class="categoria_boton izq">
+                    <h2>Platos Principales</h2>
+                    <h3>Ver más</h3>
 
-                <h3 class="subcategoria">Carnes Blancas</h3>
-                <div class="producto">
-                    <img src="img/suprema.jpg" alt="Suprema de Pollo en Salsa de Mostaza y Miel" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Suprema de Pollo en Salsa de Mostaza y Miel</h3>
-                    <p class="descripcion">Suprema de pollo a la plancha bañada en una suave salsa de mostaza y miel,
-                        acompañada de puré rústico de papas y espárragos salteados.</p>
-                    <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos,
-                        manteca.
-                    </p>
-                    <p><strong>Alérgenos:</strong> Lácteos.</p>
-                    <p class="precio">$18.00</p>
-                </div>
-                <hr class="separador">
+                    <h3 class="subcategoria">Carnes Rojas</h3>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/solomillo.jpg" alt="Solomillo a la parrilla" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Solomillo a la parrilla</h3>
+                        <p class="descripcion">Jugoso solomillo acompañado de papas rústicas.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Solomillo de res, papas, especias.</p>
+                            <p><strong>Alérgenos:</strong> Ninguno.</p>
+                        </div>
+                        <p class="precio">$33.500</p>
+                    </div>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/bife.jpg" alt="Bife de Chorizo" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Bife de Chorizo</h3>
+                        <p class="descripcion">Bife de chorizo a la parrilla acompañado de vegetales.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Bife de chorizo, zanahoria, brócoli, papas.</p>
+                            <p><strong>Alérgenos:</strong> Ninguno.</p>
+                        </div>
+                        <p class="precio">$36.500</p>
+                    </div>
 
+                    <h3 class="subcategoria">Carnes Blancas</h3>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/suprema.jpg" alt="Suprema de Pollo en Salsa de Mostaza y Miel"
+                            class="producto-imagen" onclick="mostrarImagen(this)">
+                        <h3>Suprema de Pollo en Salsa de Mostaza y Miel</h3>
+                        <p class="descripcion">Suprema de pollo a la plancha bañada en una suave salsa de mostaza y
+                            miel,
+                            acompañada de puré rústico de papas y espárragos salteados.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos,
+                                manteca.
+                            </p>
+                            <p><strong>Alérgenos:</strong> Lácteos.</p>
+                        </div>
+                        <p class="precio">$27.000</p>
+                    </div>
 
-                <h3 class="subcategoria">Pescados</h3>
-                <div class="producto">
-                    <img src="img/salmon.jpg" alt="Salmón en Costra de Sésamo con Salsa Teriyaki"
-                        class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Filete de salmón sellado con una costra de sésamo, servido con arroz basmati y vegetales
-                        salteados
-                        al wok en salsa teriyaki</h3>
-                    <p class="descripcion">Salmón, sésamo, arroz basmati, zanahoria, morrón, cebolla, salsa teriyaki.
-                    </p>
-                    <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos,
-                        manteca.
-                    </p>
-                    <p><strong>Alérgenos:</strong> Pescado, sésamo, soja.</p>
-                    <p class="precio">$22.00</p>
+                    <h3 class="subcategoria">Pescados</h3>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/salmon.jpg" alt="Salmón en Costra de Sésamo con Salsa Teriyaki"
+                            class="producto-imagen" onclick="mostrarImagen(this)">
+                        <h3>Filete de salmón sellado con una costra de sésamo, servido con arroz basmati y vegetales
+                            salteados
+                            al wok en salsa teriyaki</h3>
+                        <p class="descripcion">Salmón, sésamo, arroz basmati, zanahoria, morrón, cebolla, salsa
+                            teriyaki.
+                        </p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Pechuga de pollo, mostaza, miel, crema, papas, espárragos,
+                                manteca.
+                            </p>
+                            <p><strong>Alérgenos:</strong> Pescado, sésamo, soja.</p>
+                        </div>
+                        <p class="precio">$38.000</p>
+                    </div>
                 </div>
 
             </section>
 
-            <section class="categoria">
-                <h2>Pastas</h2>
-                <div class="producto">
-                    <img src="img/carbonara.jpg" alt="Spaghetti Carbonara" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Spaghetti Carbonara</h3>
-                    <p class="descripcion">Pasta con salsa cremosa de huevo y panceta.</p>
-                    <p><strong>Ingredientes:</strong> Pasta, huevo, panceta, queso parmesano.</p>
-                    <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
-                    <p class="precio">$12.00</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/lasagna.jpg" alt="Lasaña" class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Lasaña</h3>
-                    <p class="descripcion">Lasaña casera con carne molida y salsa bechamel.</p>
-                    <p><strong>Ingredientes:</strong> Carne molida, pasta, salsa bechamel, queso.</p>
-                    <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
-                    <p class="precio">$14.00</p>
+            <section class="categoria der">
+                <div class="categoria_boton der">
+                    <h2>Pastas</h2>
+                    <h3>Ver más</h3>
+
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/carbonara.jpg" alt="Spaghetti Carbonara" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p class="descripcion">Pasta con salsa cremosa de huevo y panceta.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Pasta, huevo, panceta, queso parmesano.</p>
+                            <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                        </div>
+                        <p class="precio">$33.500</p>
+                    </div>
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/lasagna.jpg" alt="Lasaña" class="producto-imagen" onclick="mostrarImagen(this)">
+                        <h3>Lasaña</h3>
+                        <p class="descripcion">Lasaña casera con carne molida y salsa bechamel.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Carne molida, pasta, salsa bechamel, queso.</p>
+                            <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                        </div>
+                        <p class="precio">$35.000</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="categoria">
-                <h2>Postres</h2>
-                <div class="producto">
-                    <img src="img/tiramisu.jpg" alt="Tiramisú" class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Tiramisú</h3>
-                    <p class="descripcion">Delicioso postre italiano con café y cacao.</p>
-                    <p><strong>Ingredientes:</strong> Mascarpone, café, bizcocho, cacao.</p>
-                    <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
-                    <p class="precio">$7.00</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/mousse.jpg" alt="Mousse de Chocolate" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Mousse de Chocolate</h3>
-                    <p class="descripcion">Suave mousse de chocolate amargo con crema.</p>
-                    <p><strong>Ingredientes:</strong> Chocolate, crema, azúcar.</p>
-                    <p><strong>Alérgenos:</strong> Lactosa.</p>
-                    <p class="precio">$6.50</p>
+            <section class="categoria izq">
+                <div class="categoria_boton izq">
+                    <h2>Postres</h2>
+                    <h3>Ver más</h3>
+
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/tiramisu.jpg" alt="Tiramisú" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Tiramisú</h3>
+                        <p class="descripcion">Delicioso postre italiano con café y cacao.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Mascarpone, café, bizcocho, cacao.</p>
+                            <p><strong>Alérgenos:</strong> Gluten, lactosa.</p>
+                        </div>
+                        <p class="precio">$17.000</p>
+                    </div>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/mousse.jpg" alt="Mousse de Chocolate" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Mousse de Chocolate</h3>
+                        <p class="descripcion">Suave mousse de chocolate amargo con crema.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Chocolate, crema, azúcar.</p>
+                            <p><strong>Alérgenos:</strong> Lactosa.</p>
+                        </div>
+                        <p class="precio">$10.000</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="categoria">
-                <h2>Bebidas Alcohólicas</h2>
-                <div class="producto">
-                    <img src="img/vino-malbec.jpeg" alt="Vino Malbec" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Vino Malbec</h3>
-                    <p class="descripcion">Vino tinto de uvas Malbec.</p>
-                    <p><strong>Ingredientes:</strong> Uvas Malbec.</p>
-                    <p><strong>Alérgenos:</strong> Sulfitos.</p>
-                    <p class="precio">$6.00 (copa)</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/cerveza-artesanal.jpg" alt="Cerveza Artesanal" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Cerveza Artesanal</h3>
-                    <p class="descripcion">Cerveza artesanal de estilo IPA.</p>
-                    <p><strong>Ingredientes:</strong> Cebada, lúpulo, agua, levadura.</p>
-                    <p><strong>Alérgenos:</strong> Gluten.</p>
-                    <p class="precio">$4.00 (pinta)</p>
+            <section class="categoria der">
+                <div class="categoria_boton der">
+                    <h2>Bebidas Alcohólicas</h2>
+                    <h3>Ver más</h3>
+
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/vino-malbec.jpeg" alt="Vino Malbec" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Vino Malbec</h3>
+                        <p class="descripcion">Vino tinto de uvas Malbec.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Uvas Malbec.</p>
+                            <p><strong>Alérgenos:</strong> Sulfitos.</p>
+                        </div>
+                        <p class="precio">$11.000 (copa)</p>
+                    </div>
+                    <div class="producto der" onclick="mostrarDetallePlato(this)">
+                        <img src="img/cerveza-artesanal.jpg" alt="Cerveza Artesanal" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Cerveza Artesanal</h3>
+                        <p class="descripcion">Cerveza artesanal de estilo IPA.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Cebada, lúpulo, agua, levadura.</p>
+                            <p><strong>Alérgenos:</strong> Gluten.</p>
+                        </div>
+                        <p class="precio">$9.000 (pinta)</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="categoria">
-                <h2>Bebidas sin Alcohol</h2>
-                <div class="producto">
-                    <img src="img/coca-cola.jpg" alt="Coca-Cola" class="producto-imagen" onclick="mostrarImagen(this)">
-                    <h3>Coca-Cola</h3>
-                    <p class="descripcion">Gaseosa sabor cola.</p>
-                    <p><strong>Ingredientes:</strong> Agua carbonatada, Azúcar, Colorante caramelo, Ácido fosfórico,
-                        Aromatizantes naturales</p>
-                    <p><strong>Alérgenos:</strong> fenilalanina.</p>
-                    <p class="precio">$6.00 (600ml)</p>
-                </div>
-                <hr class="separador">
-                <div class="producto">
-                    <img src="img/agua-saborizada.jpg" alt="Cerveza Artesanal" class="producto-imagen"
-                        onclick="mostrarImagen(this)">
-                    <h3>Agua Saborizada</h3>
-                    <p class="descripcion">Agua saborizada linea Coca-Cola.</p>
-                    <p><strong>Ingredientes:</strong> Agua y jugo concentrado de frutas.</p>
-                    <p><strong>Alérgenos:</strong> Lactosa, soya o fenilalanina.</p>
-                    <p class="precio">$4.00 (600ml)</p>
+            <section class="categoria izq">
+                <div class="categoria_boton izq">
+                    <h2>Bebidas Sin Alcohol</h2>
+                    <h3>Ver más</h3>
+
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/coca-cola.jpg" alt="Coca-Cola" class="producto-imagen">
+                        <h3>Coca-Cola</h3>
+                        <p class="descripcion">Gaseosa sabor cola.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Agua carbonatada, Azúcar, Colorante caramelo, Ácido
+                                fosfórico,
+                                Aromatizantes naturales</p>
+                            <p><strong>Alérgenos:</strong> fenilalanina.</p>
+                        </div>
+                        <p class="precio">$8.000 (600ml)</p>
+                    </div>
+                    <div class="producto izq" onclick="mostrarDetallePlato(this)">
+                        <img src="img/agua-saborizada.jpg" alt="Cerveza Artesanal" class="producto-imagen"
+                            onclick="mostrarImagen(this)">
+                        <h3>Agua Saborizada</h3>
+                        <p class="descripcion">Agua saborizada linea Coca-Cola.</p>
+                        <div class="infoAdicional">
+                            <p><strong>Ingredientes:</strong> Agua y jugo concentrado de frutas.</p>
+                            <p><strong>Alérgenos:</strong> Lactosa, soya o fenilalanina.</p>
+                        </div>
+                        <p class="precio">$5.000 (600ml)</p>
+                    </div>
                 </div>
             </section>
         </div>
     </main>
-    <!-- Contenedor para mostrar la imagen ampliada -->
-    <div id="imagen-ampliada" class="imagen-ampliada" onclick="cerrarImagen()" onclick="mostrarImagen(this)">
-        <img id="imagen-grande" src="" alt="Imagen Ampliada">
-    </div>
 
     <footer class="footer">
         <div class="footer-contenido">
             <p>&copy; 2025 Imperium Restaurant - Alta cocina en sombras</p>
             <p>Síguenos en:
-                <a href="https://www.facebook.com/profile.php?id=100008191458265&locale=es_LA"
-                    class="red-social">Facebook</a> |
-                <a href="https://www.instagram.com/facu_condez/?next=%2F" class="red-social">Instagram</a> |
-                <a href="https://x.com/FacuConde13" class="red-social">Twitter</a>
+                <a href="https://www.facebook.com/profile.php?id=100008191458265&locale=es_LA" class="red-social"
+                    target="_blank" rel="noopener">Facebook</a> |
+                <a href="https://www.instagram.com/facu_condez/?next=%2F" class="red-social" target="_blank"
+                    rel="noopener">Instagram</a> |
+                <a href="https://x.com/FacuConde13" class="red-social" target="_blank" rel="noopener">Twitter</a>
             </p>
         </div>
     </footer>
 
+    <div id="plato" class="plato">
+        <div class="plato-contenido">
+            <h3 id="plato-titulo"></h3>
+            <img id="plato-imagen" src="" alt="Imagen del plato">
+            <p id="plato-descripcion" class="descripcionDetalle"></p>
+            <p id="plato-ingredientes" class="ingredientesDetalle"></p>
+            <p id="plato-alergenos" class="alergenoDetalle"></p>
+            <p id="plato-precio" class="precioDetalle"></p>
+        </div>
+    </div>
+
     <!-- Scripts for website -->
-    <script src="js/image_transition.js"> </script>
+    <script src="js/open_windows.js"> </script>
+    <script src="js/logo_transition.js"></script>
+    <script src="js/categories_transition.js"></script>
+    <script src="js/close_windows.js"></script>
+    <script src="js/categories_window.js"></script>
     <script src="js/scroll.js"></script>
 
 </body>
