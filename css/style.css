@@ -391,9 +391,6 @@ h3 {
 }
 
 @media (max-width: 480px) {
-    .producto {
-        padding: 10px;
-    }
 
     .producto-imagen {
         width: 70%;
@@ -421,6 +418,15 @@ h3 {
         padding-top: 70%;
         padding-bottom: 120%;
     }
+    .producto.izq {
+        margin: 25px 0 0 7%;
+        background-color: rgba(255, 223, 181, 0.604);
+    }
+    
+    .producto.der {
+        margin: 25px 0 0 -7%;
+        background-color: rgba(255, 223, 181, 0.285);
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -442,5 +448,14 @@ h3 {
     .intro {
         padding-top: 80%;
         padding-bottom: 150%;
+    }
+    .producto.izq {
+        margin: 25px 0 0 9%;
+        background-color: rgba(255, 223, 181, 0.604);
+    }
+    
+    .producto.der {
+        margin: 25px 0 0 -9%;
+        background-color: rgba(255, 223, 181, 0.285);
     }
 }
