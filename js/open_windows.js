@@ -1,8 +1,6 @@
 /* Permite mostrar el detalle de un plato al momento de dar click */
-function mostrarDetallePlato(plato) {
-  // Evita que el clic en la imagen dispare también esta función
-  const evento = window.event;
-  if (evento.target.tagName === "IMG") return;
+function mostrarDetallePlato(plato, event) {
+  if (event) event.stopPropagation(); // Esto evita que el clic suba al contenedor
 
   const detalle = document.getElementById("plato");
 
@@ -26,6 +24,8 @@ function mostrarDetallePlato(plato) {
 function cerrarDetallePlato() {
   document.getElementById("plato").style.display = "none";
 }
+
+
 
 // Estilo para resaltar los <strong> del modal
 const style = document.createElement("style");
