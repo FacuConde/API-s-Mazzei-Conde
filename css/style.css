@@ -149,12 +149,12 @@ h3 {
 }
 
 .producto.izq {
-    margin: 25px 0 0 3%;
+    margin: 25px 0 0 7%;
     background-color: rgba(255, 223, 181, 0.604);
 }
 
 .producto.der {
-    margin: 25px 0 0 -3%;
+    margin: 25px 0 0 -7%;
     background-color: rgba(255, 223, 181, 0.285);
 }
 
@@ -169,15 +169,28 @@ h3 {
 
 .descripcion {
     font-style: italic;
-    color: #72787c;
-    font-size: 1.1em;
+    color: darkgreen;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .precio {
-    font-size: 1.4em;
-    color: brown;
+    font-size: 1.5rem !important;
+    color: darkolivegreen;
     font-weight: bold;
     margin-top: 10px;
+}
+
+.infoAdicional {
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-right: 5%;
+    color: darkslategray;
+}
+
+.infoAdicional strong {
+    color: #a52a2a;
 }
 
 /* ===========================
@@ -284,8 +297,8 @@ h3 {
 =========================== */
 .intro {
     opacity: 0;
-    padding-top: 12%;
-    padding-bottom: 20%;
+    padding-top: 80%;
+    padding-bottom: 100%;
     transform: translateY(-20px);
     transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
@@ -296,7 +309,7 @@ h3 {
 }
 
 .intro img {
-    width: 30%;
+    width: 80%;
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
@@ -409,23 +422,46 @@ h3 {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
     .intro img {
-        width: 80%;
+        width: 500px;
     }
 
     .intro {
-        padding-top: 70%;
-        padding-bottom: 120%;
+        padding-top: 8%;
+        padding-bottom: 15%;
     }
     .producto.izq {
-        margin: 25px 0 0 7%;
+        margin: 25px 0 0 3%;
         background-color: rgba(255, 223, 181, 0.604);
     }
     
     .producto.der {
-        margin: 25px 0 0 -7%;
+        margin: 25px 0 0 -3%;
         background-color: rgba(255, 223, 181, 0.285);
+    }
+
+    .contenido {
+        display: flex !important;
+    }
+
+    .orden {
+        flex-direction: row-reverse !important;
+    }
+
+    .izquierda {
+        padding-right: 2%;
+        padding-left: 0%;
+    }
+
+    .desc_plato {
+        padding-left: 2%;
+    }
+    .desc_plato h3 {
+        font-size: 1.6rem;
+    }
+    .precio {
+        font-size: 1.6rem !important;
     }
 }
 
