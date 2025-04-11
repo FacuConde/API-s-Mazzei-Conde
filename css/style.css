@@ -42,7 +42,7 @@ main {
 }
 
 .menu {
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215, 80%);
     margin: 50px auto;
     padding-top: 15px;
     padding-bottom: 5px;
@@ -83,7 +83,7 @@ main {
 .categoria {
     width: 100%;
     margin: 20px auto;
-    border-color: coral;
+    border-color: #ff7f50;
     border-style: initial;
 }
 
@@ -144,19 +144,21 @@ h3 {
     width: 100%;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    border-color: rgb(222, 184, 135) !important;
+    border-style: solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
 .producto.izq {
     margin: 25px 0 0 7%;
-    background-color: rgba(255, 223, 181, 0.604);
+    background-color: rgb(222, 184, 135, 0.6);
+    border-style: none;    
 }
 
 .producto.der {
     margin: 25px 0 0 -7%;
-    background-color: rgba(255, 223, 181, 0.285);
+    background-color: rgba(255, 223, 181, 0.0);
 }
 
 .producto-imagen {
@@ -299,7 +301,7 @@ h3 {
 =========================== */
 .intro {
     opacity: 0;
-    padding-top: 80% !important;
+    padding-top: 70% !important;
     transform: translateY(-20px);
     display: flex;
     flex-direction: column;
@@ -342,7 +344,7 @@ h3 {
 =========================== */
 
 .categoria_boton.izq {
-    background-color: tan;
+    background-color: rgb(222, 184, 135, 0.5);
     border-radius: 0 25px 25px 0;
     text-align: right;
     padding-top: 5%;
@@ -353,7 +355,7 @@ h3 {
 
 .categoria_boton.der {
     border-style: solid;
-    border-color: burlywood;
+    border-color: rgb(222, 184, 135);
     border-radius: 25px 0 0 25px;
     text-align: left;
     padding-top: 5%;
