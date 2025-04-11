@@ -37,7 +37,7 @@ body::before {
    LAYOUT GENERAL
 =========================== */
 main {
-    padding: 50px 20px;
+    padding: 0 20px;
     overflow-y: auto;
 }
 
@@ -47,7 +47,7 @@ main {
     padding-top: 15px;
     padding-bottom: 5px;
     border-radius: 20px;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 /* ===========================
@@ -116,16 +116,17 @@ h2 {
     border-bottom: 2px solid brown;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    font-size: 1.8em;
+    font-size: 2.2em;
     text-transform: uppercase;
 }
 
 h3 {
     color: darkslategray;
+    font-size: 2rem !important;
 }
 
 .subcategoria {
-    font-size: 1.3em;
+    font-size: 2rem;
     color: darkslategray;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -159,7 +160,7 @@ h3 {
 }
 
 .producto-imagen {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -170,12 +171,12 @@ h3 {
 .descripcion {
     font-style: italic;
     color: darkgreen;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .precio {
-    font-size: 1.5rem !important;
+    font-size: 2rem;
     color: darkolivegreen;
     font-weight: bold;
     margin-top: 10px;
@@ -185,6 +186,7 @@ h3 {
     text-align: left;
     padding-left: 5%;
     padding-top: 2%;
+    font-size: 2rem;
     padding-right: 5%;
     color: darkslategray;
 }
@@ -297,10 +299,19 @@ h3 {
 =========================== */
 .intro {
     opacity: 0;
-    padding-top: 80%;
-    padding-bottom: 100%;
+    padding-top: 80% !important;
     transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.arrow {
+    padding-top: 60%;
+    padding-bottom: 30%;
+    font-size: 100px !important;
+    color: hsla(0, 0%, 0%, 0.500);
 }
 
 .visible {
@@ -395,11 +406,11 @@ h3 {
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .precio {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 
@@ -410,11 +421,30 @@ h3 {
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     .precio {
-        font-size: 1.1em;
+        font-size: 1.1rem !important;
+    }
+
+    .descripcion {
+        font-size: 1.2rem !important;
+    }
+
+    .infoAdicional {
+        font-size: 1.2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .subcategoria {
+        padding-left: 15% !important;
     }
 
     main {
@@ -432,12 +462,12 @@ h3 {
         padding-bottom: 15%;
     }
     .producto.izq {
-        margin: 25px 0 0 3%;
+        margin: 25px 0 0 2%;
         background-color: rgba(255, 223, 181, 0.604);
     }
     
     .producto.der {
-        margin: 25px 0 0 -3%;
+        margin: 25px 0 0 -2%;
         background-color: rgba(255, 223, 181, 0.285);
     }
 
@@ -460,9 +490,6 @@ h3 {
     .desc_plato h3 {
         font-size: 1.6rem;
     }
-    .precio {
-        font-size: 1.6rem !important;
-    }
 }
 
 @media screen and (max-width: 380px) {
@@ -472,18 +499,30 @@ h3 {
 
     .intro {
         padding-top: 50%;
-        padding-bottom: 100%;
+        padding-bottom: 20%;
     }
 }
+
+@media screen and (max-height: 700px) {
+    .arrow {
+        padding-top: 40%;
+        padding-bottom: 0%;
+    }
+}
+
 
 @media screen and (max-width: 350px) {
     .intro img {
         width: 80%;
     }
 
+    .arrow {
+        padding-top: 70%;
+    }
+
     .intro {
-        padding-top: 80%;
-        padding-bottom: 150%;
+        padding-top: 100%;
+        padding-bottom: 30%;
     }
     .producto.izq {
         margin: 25px 0 0 9%;
@@ -493,5 +532,37 @@ h3 {
     .producto.der {
         margin: 25px 0 0 -9%;
         background-color: rgba(255, 223, 181, 0.285);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro img {
+        width: 80%;
+    }
+
+    .arrow {
+        padding-top: 30%;
+        font-size: 200px;
+    }
+
+    .intro {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .intro img {
+        width: 500px;
+    }
+
+    .arrow {
+        padding-top: 10% !important;
+        font-size: 100px;
+    }
+
+    .intro {
+        padding-top: 5% !important;
+        padding-bottom: 0% !important;
     }
 }
